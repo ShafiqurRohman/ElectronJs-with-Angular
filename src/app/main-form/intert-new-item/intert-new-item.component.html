@@ -1,0 +1,39 @@
+<div class="example-button-row">
+    <button class="basic" mat-button (click)="changeDisplay()">
+        <span class="material-symbols-outlined icon-pos-1">add</span>
+        <span *ngIf="display" class="text-1"> Add new</span>
+    </button>
+    <button mat-button [hidden]="display" class="bg-col" (click)="addChoiceQuestion()">
+        <span class="material-symbols-outlined icon-pos">radio_button_checked</span>
+        <span class="text">Choice</span>
+    </button>
+    <button mat-button [hidden]="display" class="bg-col" (click)="addTextQuestion()">
+        <span class="material-symbols-outlined icon-pos">title</span>
+        <span class="text">Text</span>
+    </button>
+    <button mat-button [hidden]="display" class="bg-col" (click)="addRattingQuestion()">
+        <span class="material-symbols-outlined icon-pos">thumb_up</span>
+        <span class="text">Rating</span>
+    </button>
+    <button mat-button [hidden]="display" class="bg-col" (click)="addDateQuestion()">
+        <span class="material-symbols-outlined icon-pos">calendar_month</span>
+        <span class="text">Date</span>
+    </button>
+    <button mat-button [hidden]="display" class="bg-col" [matMenuTriggerFor]="aboveMenu">
+        <span style="font-size: 30px;" class="material-symbols-outlined icon-pos">expand_more</span>
+    </button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <button mat-menu-item>
+          <span class="material-symbols-outlined remove-margin">swap_vert</span> Ranking
+        </button>
+        <button mat-menu-item>
+          <span class="material-symbols-outlined remove-margin">view_list </span> Likert
+        </button>
+        <button mat-menu-item>
+          <span class="material-symbols-outlined remove-margin">wifi_proxy</span> Net Promoter Score
+        </button>
+        <button mat-menu-item>
+          <span class="material-symbols-outlined remove-margin">file_copy</span> Section
+        </button>
+      </mat-menu>
+  </div>

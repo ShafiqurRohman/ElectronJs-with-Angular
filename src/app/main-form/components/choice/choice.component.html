@@ -1,0 +1,50 @@
+<form class="question-div">
+    <div class="place-change">
+        <mat-icon class="iconSize" (click)="copyComponent()">file_copy</mat-icon>
+        <mat-icon class="iconSize" (click)="deleteComponent()">delete</mat-icon>
+        <mat-icon class="iconSize">arrow_downward</mat-icon>
+        <mat-icon class="iconSize">arrow_upward</mat-icon>
+    </div>
+
+        <div class="question-header">
+            <span style="font-size: 20px;">{{index+1}}</span>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Ex. When you are done?" value={{data.question}} class="insert-photo">
+                </mat-form-field>
+    </div>
+
+    <div class="question-body">
+                <mat-radio-group
+                aria-labelledby="example-radio-group-label"
+                class="example-radio-group"
+                color="primary"
+                cdkDropList class="example-list" (cdkDropListDropped)="drop($event)"
+                >
+                <div *ngFor="let season of arr" >
+                    <div class="example-custom-placeholde" *cdkDragPlaceholder></div>
+                    <mat-radio-button class="example-radio-button example-box"  [value]="season" cdkDrag>
+                        <input class="option-input" matInput value = {{season}} >
+                    </mat-radio-button>
+                </div>
+                </mat-radio-group>
+        </div>
+
+        <div class="extra-option">
+            <button mat-flat-button (click)="AddOpiton()"><span class="material-symbols-outlined">add</span> add option</button>
+            <button *ngIf="otherDisplay" mat-flat-button (click)="AddOtherOption()">add "other" option</button>
+        </div>
+
+    <mat-divider></mat-divider>
+    <div class="place-change">
+        <div class="option">
+            <mat-slide-toggle color="primary">Multile answer</mat-slide-toggle>
+        </div>
+        <div class="option">
+            <mat-slide-toggle color="primary">Required</mat-slide-toggle> 
+        </div>
+        <div class="option">
+            <mat-icon>more_horiz</mat-icon>
+        </div>
+    </div>
+</form>
+

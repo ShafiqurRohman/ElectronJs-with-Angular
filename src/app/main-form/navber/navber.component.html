@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="mat-toolbar-top">
+  <span class="material-symbols-outlined">apps</span>
+  <span class="nav-text">Forms </span>
+  <span class="spacer"></span>
+
+
+  <span class="material-symbols-outlined right">diamond</span>
+  <span class="material-symbols-outlined right">question_mark</span>
+  <span class="material-symbols-outlined right">account_circle</span>
+  
+</mat-toolbar>
+
+<mat-toolbar class="mat-toolbar-down">
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span class="my-tab-font">Questions</span>
+      </ng-template>
+      <!-- for show content or component -->
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span class="my-tab-font">Responses</span>
+      </ng-template>
+      <!-- for show content or component -->
+    </mat-tab>
+
+  </mat-tab-group>
+
+  <span class="spacer"></span>
+
+
+    <mat-icon class="icon-style">visibility</mat-icon><span class="down-head-text"  routerLink="form-preview">Preveiw</span>
+    <mat-icon class="icon-style">palette</mat-icon><span class="down-head-text" >Style</span>
+    <button class="btn-style"><span style="color:white">Collect responses</span></button>  
+    <mat-icon class="icon-style">more_horiz</mat-icon> 
+  
+</mat-toolbar>
+

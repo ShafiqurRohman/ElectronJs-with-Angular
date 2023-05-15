@@ -1,0 +1,79 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mat-toolbar-top{
+    height: 48px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 0cm;
+}
+.mat-toolbar-down{
+    height: 48px;
+    position: fixed;
+    top: 48px;
+    z-index: 999;
+    margin-bottom: 0cm;
+}
+
+.nav-text{
+    display: inline-block;
+    font-weight: 600;
+    font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 48px;
+    padding-left: 1%;
+    cursor: pointer;
+}
+
+.right{
+    padding-right: 1%;
+    line-height: 48px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.btn-style{
+    color: white;
+    border: 1px solid rgb(3, 120, 124);
+    border-radius: 4px;
+    padding: 0px 12px;
+    height: 32px;
+    font-weight: 600;
+    font-family: "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, Roboto;
+    font-size: 14px;
+    margin-right: 12px;
+    margin-left: 12px;
+    background-color: rgb(3, 120, 124);
+}
+
+.my-tab-font {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+    line-height: 48px;
+    padding-left: 1%;
+    cursor: pointer;
+}
+
+.icon-style{
+    position: relative;
+    top: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #00000099;
+}
+
+.down-head-text{
+    padding-right: 1%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, Roboto;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+}

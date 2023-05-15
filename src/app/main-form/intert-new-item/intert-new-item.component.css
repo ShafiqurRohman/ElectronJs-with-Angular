@@ -1,0 +1,64 @@
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+    background-color: rgb(3, 120, 124);
+    height: 40px;
+    border-radius: 4px;
+  }
+
+button{
+    border-radius: 0px;
+}  
+
+button:nth-child(n+2):nth-child(-n+6){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+  .basic{
+    font-size:17px;
+    font-weight: 400;
+    height: 2.5rem;
+    color: rgb(255, 255, 255);
+    background: rgb(3, 120, 124);
+    border-radius: 4px;
+  }
+
+  .icon-pos-1{
+    color: white;
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+  }
+  .text-1{
+    color: white;
+    position: relative;
+    top: -2px;
+  }
+
+  .icon-pos{
+    color: rgb(3, 120, 124);
+    position: relative;
+    top: 2px;
+    font-size: 18px;
+  }
+  
+  .text{
+    color: black;
+    position: relative;
+    top: -2px;
+    padding-left: 5px;
+  }
+
+.bg-col{
+    background-color: white;
+    height: 33px;
+    padding-left: 5px;
+}
+
+.remove-margin{
+    margin: 0px;
+    position: relative;
+    top: 5px;
+}

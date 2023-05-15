@@ -1,0 +1,32 @@
+
+<form class="container"> 
+  <div *ngIf="headerDisplay" class="example-form">
+      <mat-form-field class="example-full-width">
+        <input #question matInput placeholder="Header" [(ngModel)] = "header" class="insert-photo" name="header" >
+      </mat-form-field>
+      
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Description" [(ngModel)] = "description" value = {{description}} name="description">
+      </mat-form-field>
+  </div>
+
+
+  
+<div *ngIf="!headerDisplay" (click)="currentCall($event)"   >
+  <h1 class='text-header'>{{header}}</h1>
+  <p class='text-header-p'>{{description}}</p>
+</div>
+
+
+    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let x of allQuestion let i = index" cdkDrag>
+          <div class="example-custom-placeholde" *cdkDragPlaceholder></div>
+          <app-choice *ngIf="x.type == 'choice'" [index]="i" [data]="x" class="width"></app-choice>
+          <app-date  *ngIf="x.type == 'date'" [index]="i" [data]="x" class="width"></app-date>
+          <app-text  *ngIf="x.type == 'text'" [index]="i" [data]="x" class="width"></app-text>
+          <app-rating  *ngIf="x.type == 'ratting'" [index]="i" [data]="x" class="width"></app-rating>
+        </div>
+      </div>  
+      <app-intert-new-item style="margin: 3%;"></app-intert-new-item>
+      
+</form>

@@ -1,0 +1,17 @@
+.main-div {
+    margin-left: 7%;
+    margin-bottom: 2%;
+    margin-top: 40px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.example-width{
+    width: 80%;
+    margin-top: 10px;
+}

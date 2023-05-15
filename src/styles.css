@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background: url(https://cdn.forms.office.net/forms/images/aio/wave-pattern-v1.svg)
+    center top / cover no-repeat fixed,
+    linear-gradient(
+    90deg,
+    rgba(3, 120, 124, 0.2) 0%,
+    rgba(3, 120, 124, 0.8) 100%
+    );
+    margin-left : 0px;
+}
+
+
+

@@ -1,0 +1,34 @@
+<form class="question-div">
+    <div class="place-change">
+        <mat-icon class="iconSize" (click)="copyComponent()" >file_copy</mat-icon>
+        <mat-icon class="iconSize" (click)="deleteComponent()" >delete</mat-icon>
+        <mat-icon class="iconSize">arrow_downward</mat-icon>
+        <mat-icon class="iconSize">arrow_upward</mat-icon>
+    </div>
+
+    <div class="question-header">
+            <span style="font-size: 20px;">{{index+1}}</span>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Ex. When you are done?" value={{data.question}} class="insert-photo">
+                </mat-form-field>
+    </div>
+
+    <div class="question-header">
+        <mat-form-field class="ans-width">
+            <input matInput placeholder="Enter your ans here" value="" >
+          </mat-form-field>
+        </div>      
+
+    <mat-divider></mat-divider>
+    <div class="place-change">
+        <div class="option">
+            <mat-slide-toggle color="primary">Long answer</mat-slide-toggle>
+        </div>
+        <div class="option">
+            <mat-slide-toggle color="primary">Required</mat-slide-toggle> 
+        </div>
+        <div class="option">
+            <mat-icon>more_horiz</mat-icon>
+        </div>
+    </div>
+</form>

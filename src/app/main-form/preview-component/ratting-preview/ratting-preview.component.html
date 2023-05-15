@@ -1,0 +1,11 @@
+<div class="main-div">
+    <div class="question">{{index+1}}. {{data.question}}</div>
+    <button mat-icon-button
+        *ngFor="let n of [].constructor(data.numberOfSymbols) let i=index;"
+        (click)="clickedOnAIcon(i)"
+        [color]="i <= clickIndex ? 'primary' : '' ">
+            <span class="material-symbols-outlined">
+                {{data.symbol}}
+            </span>
+    </button>
+  </div>

@@ -1,0 +1,15 @@
+<div class="main-div">
+    <div class="question">{{index+1}}. {{data.question}}</div>
+    <mat-form-field class="example-width">
+        <mat-label>Enter your date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+        />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  </div>

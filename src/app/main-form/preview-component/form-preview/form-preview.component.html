@@ -1,0 +1,41 @@
+<mat-toolbar class="mat-toolbar-down">
+    <a mat-button routerLink="/">
+      <mat-icon>arrow_back</mat-icon>
+      Back
+    </a>
+    <span class="spacer"></span>
+    <mat-icon>computer</mat-icon>
+</mat-toolbar>
+
+
+<!-- <div class="question-div"> -->
+    
+  <div class="container">
+    <div class="my-form">
+        <div class="header">
+            <div class="head">
+               {{header}}
+            </div>
+            <div class="des">
+                {{description}}
+            </div>
+        </div>
+        <div class="question-area">
+            <div *ngFor="let question of allQuestion let i = index">
+                <app-choice-preview *ngIf="question.type == 'choice'" [index]="i" [data]="question" class="width"></app-choice-preview>
+                <app-date-preview  *ngIf="question.type == 'date'" [index]="i" [data]="question" class="width"></app-date-preview>
+                <app-text-preview  *ngIf="question.type == 'text'" [index]="i" [data]="question" class="width"></app-text-preview>
+                <app-ratting-preview  *ngIf="question.type == 'ratting'" [index]="i" [data]="question" class="width"></app-ratting-preview>
+            </div>
+        </div>
+        <div class="submit-btn">
+            <button class="btn">Submit</button>
+        </div>
+    </div>
+    <div class="note">
+        <p class="p1">
+        This content is created by the owner of the form. The data you submit will be sent to the form owner. Microsoft is not responsible for the privacy or security practices of its customers, including those of this form owner. Never give out your password.
+        </p>
+        <p> Powered by Microsoft Forms | <a href="#">Privacy and cookies</a> | <a href="#">Terms of use</a></p>
+    </div>
+</div>

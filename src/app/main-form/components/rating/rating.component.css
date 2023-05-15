@@ -1,0 +1,104 @@
+/*for Date component*/
+
+.question-div {
+    background: rgb(245, 245, 245);
+    border-radius: 4px;
+    box-shadow: none;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    border-top: 4px solid rgb(3, 120, 124);
+    display: block;
+}
+
+.place-change{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+
+.iconSize{
+  cursor: pointer;
+  margin: 10px 10px 10px 10px;
+  color: rgb(109, 108, 109);
+}
+
+.iconSize:hover{
+    color: rgb(32, 34, 34);
+}
+  
+
+.question-header{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+
+.question-body{
+    padding-left: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+
+.insert-photo{
+    background-image: url('https://img.icons8.com/fluency-systems-regular/48/null/edit-image.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: right;
+    margin-right: 15PX;
+    font-size: 18px;
+}
+
+.extra-option{
+    padding: 10px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    color: rgb(3, 120, 124);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+
+.option{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.left{
+    padding-left: 20px;
+}
+
+
+.rating-body{
+    padding: 10px 10px 10px 10px;
+}
+
+.star{
+    width: 46px;
+    height: 66px;
+    color: rgb(184 187 187);
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
+/* for angular UI */
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 90%;
+    height: 70px;
+  }
